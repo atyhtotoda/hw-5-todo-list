@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    font-family: sans-serif;
+    color: #0f222d;
+    background-size: auto;
+}
+
+.app {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    color: darkslategrey;
+}
+
+form {
+    background-color: darkslategrey;
+    padding: 15px;
+}
+
+input[type="text"] {
+    width: 310px;
+    height: 30px;
+    outline: 0;
+    border: none;
+    font-size: 1.5em;
+    background: #fff;
+    color: #2f4f4f;
+}
+
+input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    outline: 0;
+    border: none;
+    font-size: 1.5em;
+    background: #fff;
+    color: #2f4f4f;
+}
+
+input[placeholder] {
+    font-size: 1em;
+}
+
+label {
+    margin-right: 10px;
+}
+
+button {
+    font-size: 1em;
+    font-family: "Arial Rounded MT Bold", sans-serif;
+    color: darkslategrey;
+    background-color: honeydew;
+    outline: 0;
+    border: none;
+    width: 55px;
+    height: 30px;
+
+}
+
+.tasksBoard {
+    background-color: #fff;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 40px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    border-bottom: 1px solid #53BDFF;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    font-size: 1.3em;
+    color: #2f4f4f;
+}
+
+a {
+    float: right;
+    text-align: right;
+    color: #ff6161;
+    border: 1px solid red;
+    border-radius: 7%;
+    font-size: 1.2em;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.delete {
+    color: #ff6161;
+
+    margin: 10px;
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+
+}
+
+@media (max-width: 500px) {
+    .main {
+        margin: auto;
+        width: 100%;
+    }
+
+    input[type="text"] {
+        width: 80%;
+    }
+
+    button {
+        width: 10%;
+    }
+}
+
